@@ -41,17 +41,13 @@ class Main extends Component {
         }
     }
 
-    // decrement() {
-    //     this.setState({
-    //         index: this.state.index - 1
-    //     })
-    // }
 
     render() {
         return (
-            <div>
-                <Box data={this.state.data} index={this.state.index}/>
-                <Toggle increment={this.increment} decrement={this.decrement}/>
+            <div className='main'>
+                <div className="box"><Box data={this.state.data} index={this.state.index}/></div>
+                
+                <div className="toggle"><Toggle increment={this.increment} decrement={this.decrement}/></div>
             </div>
         )
     }
