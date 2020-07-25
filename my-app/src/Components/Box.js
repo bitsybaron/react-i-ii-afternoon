@@ -7,22 +7,22 @@ class Box extends Component {
 
     render() {
         const {data, index} = this.props
-        return <div>
+        return <div className='box'>
             <div className="left">
-                <div className='name'>{data[index].name['first']} {data[index].name['last']}</div>
+                <span className='name'>{data[index].name['first']} {data[index].name['last']}</span>
                 <div className="info">
-                    From: {data[index].city}, {data[index].country} <br/>
-                    Job Title: {data[index].title} <br/>
-                    Employer: {data[index].employer}
+                    <strong>From: </strong>{data[index].city}, {data[index].country} <br/>
+                    <strong>Job Title: </strong>{data[index].title} <br/>
+                    <strong>Employer: </strong>{data[index].employer}
                 </div>
                 <div className="favMovies">
-                    Favorite Movies:
+                    <strong>Favorite Movies:</strong>
                 </div>
-                <div className="movies"> 
-                    1. {data[index].favoriteMovies[0]} <br/>
-                    2. {data[index].favoriteMovies[1]} <br/>
-                    3. {data[index].favoriteMovies[2]} <br/>
-                </div>
+                <ol className="movies"> 
+                    <li>{data[index].favoriteMovies[0]} </li>
+                    <li>{data[index].favoriteMovies[1]} </li>
+                    <li>{data[index].favoriteMovies[2]} </li>
+                </ol>
             </div>
             <div className="right">
                 <div className="id">{data[index].id}/25</div>

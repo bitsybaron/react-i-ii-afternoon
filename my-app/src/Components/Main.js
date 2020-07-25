@@ -45,9 +45,8 @@ class Main extends Component {
     render() {
         return (
             <div className='main'>
-                <div className="box"><Box data={this.state.data} index={this.state.index}/></div>
-                
-                <div className="toggle"><Toggle increment={this.increment} decrement={this.decrement}/></div>
+                <Box data={this.state.data} index={this.state.index}/>
+                <Toggle increment={this.increment} decrement={this.decrement}/>
             </div>
         )
     }

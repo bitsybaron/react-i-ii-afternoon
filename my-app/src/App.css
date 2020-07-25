@@ -24,17 +24,20 @@
   
 }
 
-  .main {
-    height: 60%;
-    width: 86%;
-  }
-
+  
+.main{
+  height: 60%;
+  width: 80%;
+}
 
  .box {
   background-color: rgb(235, 235, 235);
-  margin-top: 200px;
-  height: 85%;
+  height: 90%;
+  width: 100%;
+  margin-top: 180px;
   display: flex;
+  justify-content: space-between;
+  
 }
 
 .toggle {
@@ -42,16 +45,28 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100%;
 }
 
-span {
+.unused > span {
   color: white;
   background-color: rgb(54, 155, 202);
-  border-radius: 28%;
-  font-size: 18px;
-  padding: 5px;
+  border-radius: 20%;
+  font-size: 15px;
+  padding: 8px 15px;
+  
 }
+
+.unused {
+  display: flex;
+  width: 36%;
+  justify-content: space-evenly;
+  font-weight: 700px;
+  height: 70%;
+}
+
+
 button {
   background-color: rgb(34, 34, 37);
   color: rgb(235, 235, 235);
@@ -62,6 +77,48 @@ button {
   font-weight: bold;
 }
 
+.left {
+  height: 90%;
+  width: 80%;
+  margin-left: 70px;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+}
+
+.right {
+  
+  letter-spacing: 1px;
+  color: inherit;
+  font-weight: 800;
+  font-size: 29px;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+  
+  
+}
+
+
+.name {
+  font-size: 26px;
+  font-weight: 800;
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(54, 155, 202);
+}
+
+.info {
+  padding-top: 25px;
+  line-height: 25px;
+  padding-bottom: 30px;
+
+
+}
+
+.movies {
+  padding-left: 80px;
+  line-height: 25px;
+  
+}
 
 
 
